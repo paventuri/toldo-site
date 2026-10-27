@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="pt-BR"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow"><title>Assinatura de email · Toldo Studio</title>
+<link rel="icon" href="/favicon-32.png">
+</head>
+<body style="margin:0;background:#F6F1E7;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#1C1A16;">
+<div style="max-width:640px;margin:0 auto;padding:48px 20px 64px;">
+<p style="margin:0 0 6px;font-size:12px;letter-spacing:1.4px;text-transform:uppercase;color:#8A8174;">Toldo Studio &middot; assinatura do hello@</p>
+<h1 style="margin:0 0 28px;font-size:28px;line-height:1.15;font-weight:600;letter-spacing:-.4px;">Assinatura de email</h1>
+<div style="background:#fff;border-radius:16px;padding:34px 30px;box-shadow:0 1px 0 #E7DFD2,0 12px 32px rgba(28,26,22,.06);">
+<div id="sig"><table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;"><tr><td valign="middle" style="padding:0 18px 0 0;"><a href="https://toldostudio.com/" style="text-decoration:none;"><img src="https://toldostudio.com/email/sig-icon.png" width="72" height="72" alt="Toldo Studio" style="display:block;border:0;width:72px;height:72px;"></a></td><td valign="middle" style="padding:2px 0 2px 18px;border-left:2px solid #EDE5D8;"><div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:16px;line-height:21px;font-weight:bold;color:#1C1A16;">Maya Collins</div><div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:19px;color:#6B6358;">Toldo Studio &middot; Austin, TX</div><div style="padding:9px 0 9px 0;font-size:0;line-height:0;"><img src="https://toldostudio.com/email/sig-stripe.png" width="64" height="3" alt="" style="display:block;border:0;width:64px;height:3px;"></div><div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;color:#1C1A16;"><a href="https://toldostudio.com/" style="color:#1C1A16;font-weight:bold;text-decoration:none;">toldostudio.com</a><span style="color:#C9BFB1;">&nbsp;&nbsp;/&nbsp;&nbsp;</span><a href="https://www.instagram.com/toldostudio/" style="color:#1C1A16;text-decoration:none;">@toldostudio</a></div><div style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;font-size:13px;line-height:20px;"><a href="https://toldostudio.com/mini-x-ray/" style="color:#FF3D17;font-weight:bold;text-decoration:none;">Free Mini X-Ray of your store &rarr;</a></div></td></tr></table></div></div>
+<button id="copy" style="margin:22px 0 0;padding:15px 22px;border:0;border-radius:999px;background:#1C1A16;color:#fff;font:600 15px 'Helvetica Neue',Helvetica,Arial,sans-serif;cursor:pointer;">Copiar assinatura</button>
+<span id="ok" style="margin-left:12px;font-size:14px;color:#2E7D4F;"></span>
+<ol style="margin:34px 0 0;padding:0 0 0 20px;font-size:15px;line-height:1.7;color:#3A342D;">
+<li>Clica em <b>Copiar assinatura</b>.</li>
+<li>No Gmail do hello@: engrenagem &rarr; <b>Ver todas as configura&ccedil;&otilde;es</b> &rarr; aba <b>Geral</b> &rarr; <b>Assinatura</b> &rarr; <b>Criar nova</b> (nome: Maya).</li>
+<li>Cola na caixa (Cmd+V).</li>
+<li>Logo abaixo, em <b>Padr&otilde;es de assinatura</b>: <b>Para novos e-mails</b> = Sem assinatura, <b>Ao responder/encaminhar</b> = Maya. (Os emails de prospec&ccedil;&atilde;o j&aacute; v&ecirc;m com essa assinatura dentro; assim ela n&atilde;o sai duplicada. Num email novo qualquer, &eacute; s&oacute; clicar na canetinha da barra de baixo.)</li>
+<li>Rola at&eacute; o fim e clica em <b>Salvar altera&ccedil;&otilde;es</b>.</li>
+</ol>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', async () => {
+  const el = document.getElementById('sig'), ok = document.getElementById('ok');
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([el.innerHTML], {type: 'text/html'}),
+      'text/plain': new Blob([el.innerText], {type: 'text/plain'})})]);
+  } catch (e) {
+    const r = document.createRange(); r.selectNodeContents(el);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r); document.execCommand('copy'); s.removeAllRanges();
+  }
+  ok.textContent = 'Copiada. Agora cola no Gmail.';
+});
+</script>
+</body></html>
