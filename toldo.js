@@ -98,7 +98,7 @@ const tick=now=>{
   chs.forEach((ch,j)=>{ch.el.style.transform=`translate(${off[j][0]*sp}px,${off[j][1]*sp}px) skewX(${tx*-14}deg)`;ch.bars.forEach((el,i)=>{const c=cs[i];el.style.transform=`translate(${c.x}px,${c.y}px)`;el.style.width=Math.max(1,c.w)+'px';el.style.height=Math.max(0,c.h)+'px';el.style.opacity=clamp(c.o);});});
   const gx=cs.reduce((s,c)=>s+c.x+c.w/2,0)/N,gy=cs.reduce((s,c)=>s+c.y+c.h/2,0)/N;glow.style.transform=`translate(${gx}px,${gy}px)`;glow.style.opacity=.7+.3*Math.sin(T*.8);
  }
- if(stk&&h1){if(!stOn&&intro){stOn=true;setTimeout(()=>stk.classList.add('on'),1200);}const hr=R(h1),k=ss(.05,.6,y/innerHeight);const gx=lerp(hr.right+70,innerWidth-84,k),gy=lerp(hr.bottom-80,innerHeight-84,k),gs=lerp(1,.72,k);const f2=sx?1-Math.exp(-dt*10):1;sx+=(gx-sx)*f2;sy2+=(gy-sy2)*f2;sS+=(gs-sS)*f2;stk.style.transform=`translate(${sx-75}px,${sy2-75}px) scale(${sS})`;}
+ if(stk&&h1){if(!stOn&&intro){stOn=true;setTimeout(()=>stk.classList.add('on'),1200);}const hr=R(h1),k=ss(.05,.6,y/innerHeight);const gx=lerp(hr.right+70,innerWidth-84,k),gy=lerp(hr.bottom-80,innerHeight-(window.TOLDO_CONFIG&&TOLDO_CONFIG.chat?162:84),k),gs=lerp(1,.72,k);const f2=sx?1-Math.exp(-dt*10):1;sx+=(gx-sx)*f2;sy2+=(gy-sy2)*f2;sS+=(gs-sS)*f2;stk.style.transform=`translate(${sx-75}px,${sy2-75}px) scale(${sS})`;}
  mqs.forEach(m=>{m.x-=(60*dt+vel*.04)*m.dir;const half=m.d.scrollWidth/4;if(m.x<-half)m.x+=half;if(m.x>0)m.x-=half;m.d.style.transform=`translateX(${m.x}px)`;});
  requestAnimationFrame(tick);
 };
