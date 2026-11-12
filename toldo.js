@@ -81,7 +81,7 @@ let lastY=0,last=0;const nav=$('#nav');
 const tick=now=>{
  const dt=Math.min(.05,(now-(last||now))/1000);last=now;T+=dt;const y=scrollY;
  if(Math.abs(y-lastY)>4){nav.classList.toggle('hide',y>lastY&&y>240);lastY=y;}B.classList.toggle('scrolled',y>40);
- const cf=1-Math.exp(-dt*14);cx+=(mx-cx)*cf;cy+=(my-cy)*cf;cur.style.transform=`translate(${cx}px,${cy}px)`;
+ const cf=1-Math.exp(-dt*26);cx+=(mx-cx)*cf;cy+=(my-cy)*cf;cur.style.transform=`translate(${cx}px,${cy}px)`;
  const dx=mx-lx,dy=my-ly;lx=mx;ly=my;vel+=(Math.min(50,Math.hypot(dx,dy))-vel)*(1-Math.exp(-dt*6));
  const pf=1-Math.exp(-dt*3);tx+=((mx/innerWidth-.5)-tx)*pf;ty+=((my/innerHeight-.5)-ty)*pf;
  if(anchors.length){
