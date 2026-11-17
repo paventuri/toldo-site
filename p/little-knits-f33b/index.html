@@ -1,0 +1,508 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Little Knits · Mobile homepage sketch by Toldo Studio</title>
+<meta name="robots" content="noindex, nofollow">
+<script>(function(){var e=Date.parse("2026-11-23T05:59:00Z");if(Date.now()>e){location.replace("/p/little-knits-f33b/expired.html");}})();</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..600,0..100;1,9..144,300..600,0..100&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="/p/little-knits-f33b/img/hero-shop.webp">
+<style>
+:root{
+  --paper:#F7F3EC;--plate:#F1ECE3;--card:#FFFFFF;--ink:#1D2A33;--mute:#5D6670;--line:#E2DACC;
+  --slate:#2C5A78;--slate-d:#1D3F56;--gold:#C9A24A;--gold-l:#E9D6A6;--sale:#B23A27;
+  --serif:'Fraunces',Georgia,serif;--sans:'Figtree',system-ui,sans-serif;
+  --pad:20px;--max:1280px;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-padding-top:120px}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+button,input{font:inherit}
+a{color:inherit}
+.wrap{max-width:var(--max);margin:0 auto;padding:0 var(--pad)}
+h1,h2,h3,blockquote,.bq,footer p{text-wrap:balance}
+h1,h2,h3{margin:0;font-family:var(--serif);font-weight:400;font-variation-settings:"SOFT" 50,"opsz" 96;letter-spacing:-.025em;line-height:1.03}
+em{font-style:italic}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 26px;border-radius:999px;background:var(--slate);color:#fff;font-weight:600;font-size:16px;text-decoration:none;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--slate-d)}
+.btn:focus-visible,a:focus-visible,button:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.lnk{display:inline-flex;align-items:center;gap:6px;min-height:44px;font-weight:600;text-decoration:none}
+.lnk span{border-bottom:1.5px solid currentColor;line-height:1.2}
+.eyebrow{font-size:12px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--mute)}
+svg.i{width:22px;height:22px;stroke:currentColor;fill:none;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+
+/* announcement + header */
+.ann{background:var(--slate-d);color:#F3EEE4;font-size:12.5px;text-align:center;padding:8px 12px;letter-spacing:.01em}
+.ann b{font-weight:600;color:var(--gold-l)}
+header{position:sticky;top:0;z-index:20;background:rgba(247,243,236,.96);backdrop-filter:saturate(1.2) blur(6px);border-bottom:1px solid var(--line)}
+.hd{display:grid;grid-template-columns:92px 1fr 92px;align-items:center;height:58px}
+.hd .logo{justify-self:center}
+.hd .logo img{height:26px;width:auto}
+.hd .icons{display:flex;justify-content:flex-end}
+.ib{width:44px;height:44px;display:grid;place-items:center;background:none;border:0;color:var(--ink);position:relative;padding:0}
+nav.main{display:none}
+.hd .acct{display:none}
+.srch{max-width:var(--max);margin:0 auto;padding:0 var(--pad) 10px}
+.srch div{display:flex;align-items:center;gap:10px;height:44px;border-radius:999px;background:var(--card);border:1px solid var(--line);padding:0 16px;color:#7C848C;font-size:14.5px}
+.srch svg{width:18px;height:18px;flex:none;color:var(--ink)}
+
+/* hero */
+.hero{padding:12px 0 22px}
+.mosaic{display:grid;grid-template-columns:1.32fr 1fr;grid-template-rows:1fr 1fr;gap:8px;height:216px}
+.mosaic figure{margin:0;border-radius:16px;overflow:hidden;position:relative;background:var(--plate)}
+.mosaic figure:first-child{grid-row:1/3}
+.mosaic img{width:100%;height:100%;object-fit:cover}
+.mosaic .badge{position:absolute;left:10px;bottom:10px;background:rgba(255,255,255,.94);border-radius:999px;font-size:11.5px;font-weight:600;padding:6px 11px;letter-spacing:.01em}
+.hcopy{padding-top:18px}
+.hcopy h1{font-size:41px;margin:8px 0 10px}
+.hcopy h1 em{color:var(--slate);font-variation-settings:"SOFT" 100,"opsz" 96}
+.hcopy p.sub{font-size:16px;color:var(--mute);margin:0 0 18px;max-width:30em;text-wrap:pretty}
+.ctas{display:flex;flex-wrap:wrap;align-items:center;gap:6px 22px}
+.ctas .btn{flex:0 0 auto}
+.proof{display:flex;align-items:center;gap:10px;margin-top:12px;font-size:14px;color:var(--mute)}
+.proof b{color:var(--ink);font-weight:600}
+.stars{display:inline-flex;gap:1px;color:var(--gold)}
+.stars svg{width:15px;height:15px;fill:currentColor}
+
+/* trust strip */
+.trust{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--card)}
+.trust ul{list-style:none;margin:0 auto;padding:0 var(--pad);display:grid;grid-template-columns:repeat(2,1fr);max-width:var(--max)}
+.trust li{padding:14px 0;font-size:13.5px;line-height:1.3}
+.trust li:nth-child(odd){padding-right:14px}
+.trust li:nth-child(even){padding-left:14px;border-left:1px solid var(--line)}
+.trust li:nth-child(n+3){border-top:1px solid var(--line)}
+.trust li b{display:block;font-weight:600;font-size:14px}
+.trust li span{color:var(--mute)}
+
+/* sections */
+section.s{padding:42px 0}
+.sh{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:18px}
+.sh h2{font-size:31px}
+.sh .lnk{font-size:14.5px;white-space:nowrap}
+.sh p{margin:6px 0 0;color:var(--mute);font-size:15px}
+
+/* weights */
+.weights{display:grid;grid-auto-flow:column;grid-auto-columns:max-content;gap:8px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--pad);padding:0 var(--pad) 4px;margin:0 calc(var(--pad)*-1);scrollbar-width:none}
+.weights::-webkit-scrollbar{display:none}
+.weights a{scroll-snap-align:start;display:flex;flex-direction:column;justify-content:space-between;gap:12px;width:108px;height:96px;padding:16px 14px 12px;border-radius:14px;background:var(--card);border:1px solid var(--line);text-decoration:none;transition:border-color .2s}
+.weights a:hover{border-color:var(--ink)}
+.weights i{display:block;width:44px;border-radius:99px;background:var(--slate)}
+.weights b{font-weight:600;font-size:14.5px;line-height:1.15}
+.wfoot{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:10px;font-size:14px}
+
+/* product rail */
+.rail{display:grid;grid-auto-flow:column;grid-auto-columns:62%;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--pad);padding:0 var(--pad) 6px;margin:0 calc(var(--pad)*-1);scrollbar-width:none}
+.rail::-webkit-scrollbar{display:none}
+.card{scroll-snap-align:start;display:flex;flex-direction:column;text-decoration:none}
+.card .ph{position:relative;aspect-ratio:1/1;border-radius:16px;overflow:hidden;background:var(--plate);display:grid;place-items:center}
+.card .ph img{position:absolute;inset:0;margin:auto;width:78%;height:78%;object-fit:contain;mix-blend-mode:multiply;transition:transform .5s}
+.card:hover .ph img{transform:scale(1.03)}
+.card .off{position:absolute;left:10px;top:10px;background:var(--sale);color:#fff;font-size:11.5px;font-weight:600;padding:4px 9px;border-radius:999px;letter-spacing:.02em}
+.card .add{position:absolute;right:10px;bottom:10px;width:44px;height:44px;border-radius:50%;background:var(--card);display:grid;place-items:center;box-shadow:0 2px 8px rgba(29,42,51,.15);color:var(--ink)}
+.card .meta{padding:12px 2px 0}
+.card .fib{font-size:12px;color:var(--mute);font-weight:500;letter-spacing:.01em}
+.card h3{font-size:19.5px;line-height:1.12;letter-spacing:-.015em;margin-top:4px;text-wrap:balance}
+.card .col{font-size:13.5px;color:var(--mute);margin-top:2px}
+.card .pr{margin-top:6px;font-size:15px}
+.card .pr b{font-weight:600;color:var(--sale)}
+.card .pr s{color:var(--mute);margin-left:6px;font-size:13.5px}
+
+/* bags */
+.bags{background:var(--slate-d);color:#F3EEE4;border-radius:22px;padding:28px 20px 22px;position:relative;overflow:hidden}
+.bags .eyebrow{color:var(--gold-l)}
+.bags h2{font-size:33px;margin-top:10px}
+.bags h2 em{color:var(--gold-l)}
+.bags .lead{color:#CBD3D9;margin:10px 0 18px;font-size:15.5px;max-width:30em}
+.blist{list-style:none;margin:0;padding:0;border-top:1px solid rgba(243,238,228,.18)}
+.blist a{display:grid;grid-template-columns:64px 1fr auto;gap:14px;align-items:center;padding:12px 0;border-bottom:1px solid rgba(243,238,228,.18);text-decoration:none}
+.blist img{width:64px;height:64px;border-radius:12px;object-fit:contain;background:#fff;padding:4px}
+.blist b{display:block;font-weight:600;font-size:14.5px;line-height:1.25}
+.blist span{display:block;font-size:12.5px;color:#AFC0CC;margin-top:2px;line-height:1.3}
+.blist .p{text-align:right;font-size:15px;font-weight:600;color:#fff;white-space:nowrap}
+.blist .p s{display:block;font-weight:400;font-size:12.5px;color:#AFC0CC}
+.myst{display:grid;grid-template-columns:96px 1fr;gap:14px;align-items:center;margin-top:16px;background:rgba(243,238,228,.08);border-radius:16px;padding:10px;text-decoration:none}
+.myst img{width:96px;height:96px;border-radius:12px;object-fit:contain;background:#fff;padding:4px}
+.myst b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-.02em;line-height:1.05}
+.myst span{display:block;font-size:13.5px;color:#CBD3D9;margin-top:4px}
+.bq{margin:18px 0 0;font-size:14.5px;color:#DCE3E8;font-style:italic}
+.bq cite{font-style:normal;color:#AFC0CC;font-size:13px;display:block;margin-top:4px}
+
+/* patterns */
+.pats{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.pats a{text-decoration:none;display:block}
+.pats .ph{aspect-ratio:3/2;border-radius:14px;overflow:hidden;background:var(--plate)}
+.pats img{width:100%;height:100%;object-fit:cover;object-position:50% 20%;transition:transform .5s}
+.pats a:hover img{transform:scale(1.03)}
+.pats b{display:block;font-weight:600;font-size:14.5px;margin-top:8px;line-height:1.25}
+.patband{display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.pat-h{font-size:28px}
+.patband .n{font-family:var(--serif);font-size:58px;line-height:.9;letter-spacing:-.04em;color:var(--slate)}
+
+/* browse */
+.browse{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.browse a{display:flex;align-items:center;min-height:56px;border-bottom:1px solid var(--line);text-decoration:none;font-size:16px;font-weight:500}
+.browse a span{font-size:13px;color:var(--mute);font-weight:400;margin-left:auto;margin-right:10px;text-align:right}
+.browse a svg{width:18px;height:18px;color:var(--mute);flex:none}
+
+/* reviews */
+.revs{background:var(--card);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.big{font-family:var(--serif);font-variation-settings:"SOFT" 50,"opsz" 144;font-size:52px;line-height:.95;letter-spacing:-.04em;margin-top:10px}
+.big small{display:flex;align-items:center;gap:10px;font-family:var(--sans);font-size:14px;letter-spacing:0;color:var(--mute);margin-top:8px}
+.rv-h{font-size:34px;margin-top:10px}.rv-h em{color:var(--slate)}
+.qrail{display:grid;grid-auto-flow:column;grid-auto-columns:84%;gap:12px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding:0 var(--pad);margin:22px calc(var(--pad)*-1) 0;padding:0 var(--pad) 4px;scrollbar-width:none}
+.qrail::-webkit-scrollbar{display:none}
+.qrail .q{scroll-snap-align:start;margin:0;background:var(--paper);border-radius:16px;padding:20px 20px 18px;display:flex;flex-direction:column;justify-content:space-between;gap:16px}
+.qrail .q .stars svg{width:14px;height:14px}
+.qrail .q blockquote{margin:10px 0 0;font-family:var(--serif);font-variation-settings:"SOFT" 80,"opsz" 36;font-size:18.5px;line-height:1.32;letter-spacing:-.01em}
+.qrail .q figcaption{font-size:13.5px;color:var(--mute)}
+.qrail .q figcaption b{color:var(--ink);font-weight:600}
+
+/* story */
+.story .photo{border-radius:18px;overflow:hidden;aspect-ratio:16/10}
+.story .photo img{width:100%;height:100%;object-fit:cover;object-position:50% 50%}
+.story blockquote{margin:22px 0 14px;font-family:var(--serif);font-variation-settings:"SOFT" 80,"opsz" 96;font-size:29px;line-height:1.1;letter-spacing:-.025em}
+.story blockquote em{color:var(--slate)}
+.story .sig{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--mute);line-height:1.3}
+.story .sig img{width:34px;height:34px;border-radius:6px}
+.story .sig b{color:var(--ink);font-weight:600;display:block}
+.story p{color:var(--mute);margin:16px 0 0;max-width:34em}
+.facts{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--ink);margin-top:20px}
+.facts div{padding:12px 8px 0 0}
+.facts div+div{padding-left:12px;border-left:1px solid var(--line)}
+.facts b{display:block;font-family:var(--serif);font-variation-settings:"SOFT" 50,"opsz" 96;font-weight:400;font-size:24px;letter-spacing:-.03em;line-height:1}
+.facts span{display:block;font-size:12.5px;color:var(--mute);margin-top:6px;line-height:1.3}
+
+/* help */
+.help ul{list-style:none;margin:0;padding:0;border-top:1px solid var(--ink)}
+.help li{display:grid;gap:3px;padding:15px 0;border-bottom:1px solid var(--line)}
+.help li b{font-weight:600}
+.help li span{color:var(--mute);font-size:14.5px}
+.help li a{font-weight:600;color:var(--ink)}
+
+/* footer */
+footer{background:var(--slate-d);color:#E3E8EC;padding:40px 0 96px;margin-top:8px}
+footer h2{font-size:28px;color:#F7F3EC}
+footer p{color:#AFC0CC;margin:8px 0 16px;font-size:14.5px}
+.nl{display:flex;gap:8px;background:#F7F3EC;border-radius:999px;padding:5px 5px 5px 18px}
+.nl input{flex:1;min-width:0;border:0;background:transparent;font:inherit;font-size:15px;height:44px;color:var(--ink)}
+.nl .btn{min-height:44px;padding:0 18px;font-size:15px;background:var(--gold);color:var(--ink)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:26px 18px;margin-top:36px;padding-top:28px;border-top:1px solid rgba(227,232,236,.2)}
+.cols h4{margin:0 0 6px;font-size:12px;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:#93A6B4}
+.cols a{display:flex;align-items:center;min-height:36px;text-decoration:none;font-size:14.5px}
+.cols address{font-style:normal;font-size:14.5px;line-height:1.5;padding:8px 0 4px}
+.legal{margin-top:28px;font-size:12.5px;color:#93A6B4;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+
+/* help button + sheet */
+.help-btn{position:fixed;right:14px;bottom:16px;z-index:32;opacity:0;transform:translateY(12px);pointer-events:none;transition:opacity .25s,transform .25s;height:50px;padding:0 18px 0 14px;border-radius:999px;background:var(--slate);color:#fff;border:0;display:flex;align-items:center;gap:8px;font:600 14.5px var(--sans);box-shadow:0 0 0 2px rgba(247,243,236,.9),0 6px 18px rgba(29,42,51,.25)}
+.help-btn svg{width:20px;height:20px}
+body.scrolled .help-btn{opacity:1;transform:none;pointer-events:auto}
+body.help-open .help-btn{opacity:0;pointer-events:none}
+.scrim{position:fixed;inset:0;z-index:30;background:rgba(29,42,51,.38);display:none}body.help-open .scrim{display:block}
+.sheet .close{position:absolute;right:10px;top:10px;width:40px;height:40px;border-radius:50%;border:0;background:rgba(243,238,228,.12);color:#F3EEE4;display:grid;place-items:center}
+.sheet .close svg{width:18px;height:18px}
+.sheet{position:fixed;right:14px;bottom:78px;z-index:31;width:min(360px,calc(100vw - 28px));background:var(--card);border-radius:18px;box-shadow:0 14px 40px rgba(29,42,51,.28);overflow:hidden;display:none;border:1px solid var(--line)}
+body.help-open .sheet{display:block}
+.sheet .top{background:var(--slate-d);color:#F3EEE4;padding:16px 56px 16px 18px;position:relative}
+.sheet .top b{display:block;font-family:var(--serif);font-weight:400;font-size:22px;letter-spacing:-.02em}
+.sheet .top span{font-size:13px;color:#AFC0CC}
+.sheet .opts{padding:6px 18px 4px}
+.sheet .opts a{display:grid;grid-template-columns:38px 1fr;gap:12px;align-items:center;padding:11px 0;border-bottom:1px solid var(--line);text-decoration:none}
+.sheet .opts a:last-child{border-bottom:0}
+.sheet .opts i{width:38px;height:38px;border-radius:50%;background:var(--plate);display:grid;place-items:center;color:var(--slate)}
+.sheet .opts i svg{width:18px;height:18px}
+.sheet .opts b{display:block;font-weight:600;font-size:15px}
+.sheet .opts span{display:block;font-size:13px;color:var(--mute)}
+.sheet .hrs{padding:10px 18px 14px;font-size:12.5px;color:var(--mute);background:var(--paper)}
+
+/* desktop */
+@media (min-width:900px){
+  :root{--pad:40px}
+  html{scroll-padding-top:140px}
+  .ann{font-size:13px}
+  .srch{padding-bottom:14px}
+  .srch div{max-width:640px;margin:0 auto}
+  .hero{padding:36px 0 56px}
+  .hero .wrap{display:grid;grid-template-columns:5fr 6fr;gap:56px;align-items:center}
+  .hcopy{order:-1;padding-top:0}
+  .hcopy h1{font-size:70px;margin:16px 0 18px}
+  .hcopy p.sub{font-size:19px;margin-bottom:28px}
+  .ctas .btn{flex:0 0 auto}
+  .mosaic{height:540px;gap:12px}
+  .mosaic figure{border-radius:22px}
+  .trust ul{grid-template-columns:repeat(4,1fr)}
+  .trust li{padding:18px 0}
+  .trust li:nth-child(n){border-top:0;padding-right:20px;padding-left:0;border-left:0}
+  .trust li:nth-child(n+2){border-left:1px solid var(--line);padding-left:22px}
+  section.s{padding:72px 0}
+  .sh{margin-bottom:26px}
+  .sh h2{font-size:46px}
+  .weights{grid-auto-flow:row;grid-template-columns:repeat(7,1fr);overflow:visible;margin:0;padding:0;gap:12px}
+  .weights a{width:auto;height:110px}
+  .rail{grid-auto-flow:row;grid-template-columns:repeat(3,1fr);overflow:visible;margin:0;padding:0;gap:34px 26px}
+  .card h3{font-size:23px}
+  .bags{padding:56px 60px;display:grid;grid-template-columns:1fr 1.15fr;gap:56px;align-items:start}
+  .bags h2{font-size:52px}
+  .pats{grid-template-columns:repeat(4,1fr);gap:18px}
+  .pat-h{font-size:46px}
+  .patband .n{font-size:96px}
+  .browse{display:grid;grid-template-columns:1fr 1fr;column-gap:40px}
+  .revs .wrap{display:grid;grid-template-columns:300px 1fr;gap:56px;align-items:start}
+  .qrail{grid-auto-flow:row;grid-template-columns:repeat(2,1fr);overflow:visible;margin:0;padding:0;gap:18px}
+  .qrail .q{padding:26px}
+  .rv-h{font-size:46px}
+  .story .wrap{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:center}
+  .story blockquote{font-size:42px;margin-top:0}
+  .help ul{display:grid;grid-template-columns:repeat(3,1fr);gap:0 32px}
+  footer{padding:64px 0 110px}
+  .ftop{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:end}
+  .cols{grid-template-columns:repeat(4,1fr)}
+  .help-btn{right:28px;bottom:28px}
+  .sheet{right:28px;bottom:90px}
+}
+@media (min-width:1100px){
+  .hd{grid-template-columns:auto 1fr auto;height:74px;gap:36px}
+  .hd > div:first-child{display:none}
+  .hd .logo{justify-self:start}
+  .hd .logo img{height:34px}
+  nav.main{display:flex;gap:26px;justify-content:center}
+  nav.main a{text-decoration:none;font-size:15px;font-weight:500;min-height:44px;display:flex;align-items:center;white-space:nowrap}
+  nav.main a:hover{color:var(--slate)}
+  .hd .acct{display:grid}
+}
+.tbar{background:#1C1A16;color:#F6F1E7;font:500 12px/1.3 'Figtree',system-ui,sans-serif;display:block;padding:8px 12px;text-align:center}
+.tbar img{display:inline-block;width:15px;height:15px;border-radius:3px;vertical-align:-3px;margin-right:7px}
+.tbar a{color:#F6F1E7}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body id="top">
+<div class="tbar"><img src="/favicon-32.png" alt="">Mobile homepage sketch by <a href="https://toldostudio.com/">Toldo Studio</a> · open until Nov&nbsp;22</div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="star" viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .7-4.5 4.1 1.2 5.9L10 14.8l-5.3 3 1.2-5.9L1.4 7.8l6-.7z"/></symbol>
+  <symbol id="arr" viewBox="0 0 24 24"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+</svg>
+
+<div class="ann">Free shipping on orders of $100+ <b>in the contiguous U.S.</b></div>
+
+<header>
+  <div class="wrap hd">
+    <div><button class="ib menu" aria-label="Menu"><svg class="i" viewBox="0 0 24 24"><path d="M3 7h18M3 12h18M3 17h18"/></svg></button></div>
+    <a class="logo" href="#top" aria-label="Little Knits home"><img src="/p/little-knits-f33b/img/logo.png" alt="Little Knits · Est. 2002" width="600" height="101"></a>
+    <nav class="main" aria-label="Main">
+      <a href="#new">New &amp; on sale</a><a href="#weight">Yarn by weight</a><a href="#bags">Bags of 5 &amp; 10</a><a href="#patterns">Free patterns</a><a href="#browse">Needles &amp; more</a>
+    </nav>
+    <div class="icons">
+      <button class="ib acct" aria-label="Account"><svg class="i" viewBox="0 0 24 24"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1.2-3.6 4-5.3 7.5-5.3s6.3 1.7 7.5 5.3"/></svg></button>
+      <button class="ib" aria-label="Wishlist"><svg class="i" viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg></button>
+      <button class="ib" aria-label="Cart, 0 items"><svg class="i" viewBox="0 0 24 24"><path d="M5 8h14l-1.2 11.2a1 1 0 0 1-1 .8H7.2a1 1 0 0 1-1-.8z"/><path d="M9 8V6.5a3 3 0 0 1 6 0V8"/></svg></button>
+    </div>
+  </div>
+  <div class="srch"><div role="search"><svg class="i" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M20 20l-4.2-4.2"/></svg>Search yarn by brand, color or fiber</div></div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div class="mosaic">
+      <figure class="m1"><img src="/p/little-knits-f33b/img/hero-shop.webp" alt="Shelves of yarn in every color" width="1080" height="1080" fetchpriority="high"><span class="badge">Lace to super bulky</span></figure>
+      <figure class="m2"><img src="/p/little-knits-f33b/img/hero-red.webp" alt="Malabrigo Sock yarn in Tiziano Red" width="737" height="741"></figure>
+      <figure class="m3"><img src="/p/little-knits-f33b/img/hero-teal.webp" alt="Malabrigo Sock yarn in Persia" width="740" height="737"></figure>
+    </div>
+    <div class="hcopy">
+      <div class="eyebrow">Family-owned yarn shop · Seattle</div>
+      <h1>Luxury yarn, <em>bargain</em> prices.</h1>
+      <p class="sub">Hand-dyed, luxury and everyday yarns from around the world, plus needles, tools and free patterns.</p>
+      <div class="ctas">
+        <a class="btn" href="#new">Shop the sale <svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="lnk" href="#weight"><span>Shop by weight</span></a>
+      </div>
+      <div class="proof"><svg class="i" viewBox="0 0 24 24" style="width:18px;height:18px;color:var(--slate)"><circle cx="12" cy="12" r="8"/><path d="M5.5 8.5c3.5 1 9.5 1 13 0M4.6 13c4.4 1.4 10.4 1.4 14.8 0M8 5.5c-1 4 0 9.5 3 13.5M14 4.5c2 4 2.4 10 .5 15"/></svg><span><b>500,000+</b> happy knitters and crocheters</span></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="new" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sh"><h2>New in, already on sale</h2><a class="lnk" href="#top"><span>See all</span></a></div>
+    <div class="rail">
+      <a class="card" href="#top">
+        <div class="ph"><img src="/p/little-knits-f33b/img/new-cusco.webp" alt="Lamana Cusco yarn in Silver Grey" loading="lazy" width="686" height="564"><span class="off">50% off</span><span class="add" aria-label="Add to cart"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="meta"><div class="fib">100% baby alpaca · DK</div><h3>Lamana Cusco</h3><div class="col">Silver Grey</div><div class="pr"><b>$7.50</b><s>$15.00</s></div></div>
+      </a>
+      <a class="card" href="#top">
+        <div class="ph"><img src="/p/little-knits-f33b/img/new-andeamo.webp" alt="Jody Long Andeamo Painted in Sunset" loading="lazy" width="761" height="873"><span class="off">55% off</span><span class="add" aria-label="Add to cart"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="meta"><div class="fib">Wool &amp; alpaca · big 200 g hanks</div><h3>Jody Long Andeamo Painted</h3><div class="col">Sunset</div><div class="pr"><b>$12.99</b><s>$29.00</s></div></div>
+      </a>
+      <a class="card" href="#top">
+        <div class="ph"><img src="/p/little-knits-f33b/img/new-piedmont.webp" alt="Juniper Moon Farm Piedmont in Prairie" loading="lazy" width="546" height="416"><span class="off">20% off</span><span class="add" aria-label="Add to cart"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="meta"><div class="fib">Recycled cashmere &amp; silk</div><h3>Juniper Moon Farm Piedmont</h3><div class="col">Prairie</div><div class="pr"><b>$19.99</b><s>$25.00</s></div></div>
+      </a>
+      <a class="card" href="#top">
+        <div class="ph"><img src="/p/little-knits-f33b/img/new-suri.webp" alt="Cascade Suri Seda in Dusty Rose" loading="lazy" width="579" height="899"><span class="off">20% off</span><span class="add" aria-label="Add to cart"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="meta"><div class="fib">Baby suri alpaca &amp; silk · lace</div><h3>Cascade Suri Seda</h3><div class="col">Dusty Rose</div><div class="pr"><b>$15.99</b><s>$20.00</s></div></div>
+      </a>
+      <a class="card" href="#top">
+        <div class="ph"><img src="/p/little-knits-f33b/img/new-jojo4.webp" alt="Jojoland 4-Ply Cashmere in Blue Steel" loading="lazy" width="686" height="458"><span class="off">55% off</span><span class="add" aria-label="Add to cart"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="meta"><div class="fib">100% cashmere</div><h3>Jojoland 4-Ply Cashmere</h3><div class="col">Blue Steel</div><div class="pr"><b>$16.20</b><s>$36.00</s></div></div>
+      </a>
+      <a class="card" href="#top">
+        <div class="ph"><img src="/p/little-knits-f33b/img/new-misty.webp" alt="Elsebeth Lavold Misty Wool in Ivory" loading="lazy" width="916" height="622"><span class="off">55% off</span><span class="add" aria-label="Add to cart"><svg class="i" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg></span></div>
+        <div class="meta"><div class="fib">Wool &amp; hemp · worsted</div><h3>Elsebeth Lavold Misty Wool</h3><div class="col">Ivory</div><div class="pr"><b>$8.99</b><s>$20.00</s></div></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="weight" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sh"><div><h2>Shop by weight</h2><p>Start with your pattern, not a list of brands.</p></div></div>
+    <div class="weights">
+      <a href="#top"><i style="height:2px"></i><b>Lace</b></a>
+      <a href="#top"><i style="height:3.5px"></i><b>Fingering</b></a>
+      <a href="#top"><i style="height:5px"></i><b>Sport</b></a>
+      <a href="#top"><i style="height:6.5px"></i><b>DK</b></a>
+      <a href="#top"><i style="height:8.5px"></i><b>Worsted</b></a>
+      <a href="#top"><i style="height:11px"></i><b>Bulky &amp; chunky</b></a>
+      <a href="#top"><i style="height:14px"></i><b>Super bulky</b></a>
+    </div>
+    <div class="wfoot"><span style="color:var(--mute)">Or filter by fiber, color and brand</span><a class="lnk" href="#top"><span>Advanced search</span></a></div>
+  </div>
+</section>
+
+<div class="trust">
+  <ul>
+    <li><b>Ships in 2–3 days</b><span>Monday to Friday</span></li>
+    <li><b>200+ free patterns</b><span>as PDF downloads</span></li>
+    <li><b>Local pickup</b><span>at the Seattle shop</span></li>
+    <li><b>Gift certificates</b><span>from $5</span></li>
+  </ul>
+</div>
+
+
+<section class="s" id="bags">
+  <div class="wrap">
+    <div class="bags">
+      <div>
+        <div class="eyebrow">Bags of 5 &amp; 10</div>
+        <h2>A sweater's worth, <em>for less.</em></h2>
+        <p class="lead">Many of our yarns also come in full bags of 5 or 10 skeins, at a lower price per skein.</p>
+        <p class="bq">“I especially love the five and ten bag sales pricing they frequently have.”<cite>Susan C.</cite></p>
+      </div>
+      <div>
+        <ul class="blist">
+          <li><a href="#top"><img src="/p/little-knits-f33b/img/bag-bluebells.webp" alt="" loading="lazy"><div><b>Elsebeth Lavold Silky Wool Aran</b><span>Blue Bells · bag of 5</span><span>$5.40 per skein</span></div><div class="p">$26.99<s>$60.00</s></div></a></li>
+          <li><a href="#top"><img src="/p/little-knits-f33b/img/bag-slate.webp" alt="" loading="lazy"><div><b>Lamana Cusco</b><span>Slate Grey · bag of 5</span><span>$6.00 per skein</span></div><div class="p">$29.99<s>$75.00</s></div></a></li>
+          <li><a href="#top"><img src="/p/little-knits-f33b/img/bag-helena.webp" alt="" loading="lazy"><div><b>Woll-Schwestern by Schoppel</b><span>Helena · bag of 10</span><span>$5.75 per skein</span></div><div class="p">$57.50<s>$180.00</s></div></a></li>
+        </ul>
+        <a class="myst" href="#top"><img src="/p/little-knits-f33b/img/mystery.webp" alt="A Hikoo SimpliCity Spot mystery bag" loading="lazy"><div><b>Mystery bags</b><span>A surprise color split, from $19.40 for ten skeins</span></div></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="patterns" style="padding-top:8px">
+  <div class="wrap">
+    <div class="patband"><span class="n">200+</span><div><h2 class="pat-h">Free PDF patterns</h2><div style="color:var(--mute);font-size:14.5px">Pick a project, then the yarn.</div></div></div>
+    <div class="pats">
+      <a href="#top"><div class="ph"><img src="/p/little-knits-f33b/img/pat-cardigans.webp" alt="Cardigan and sweater pattern" loading="lazy"></div><b>Cardigans &amp; sweaters</b></a>
+      <a href="#top"><div class="ph"><img src="/p/little-knits-f33b/img/pat-cowls.webp" alt="Cowl and scarf pattern" loading="lazy"></div><b>Cowls &amp; scarves</b></a>
+      <a href="#top"><div class="ph"><img src="/p/little-knits-f33b/img/pat-baby.webp" alt="Baby and kids pattern" loading="lazy"></div><b>Kids &amp; baby</b></a>
+      <a href="#top"><div class="ph"><img src="/p/little-knits-f33b/img/pat-crochet.webp" alt="Crochet pattern" loading="lazy"></div><b>Crochet</b></a>
+    </div>
+    <div style="margin-top:14px"><a class="lnk" href="#top"><span>Shop free patterns</span></a></div>
+  </div>
+</section>
+
+<section class="s" id="browse" style="padding-top:8px">
+  <div class="wrap">
+    <div class="sh"><h2>Everything else</h2></div>
+    <ul class="browse">
+      <li><a href="#top">Yarn brands, A to Z<span>Amano to Zealana</span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Sock yarns<span></span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Needles &amp; hooks<span>Addi, Lykke, ChiaoGoo</span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Clear Me Away! final clearance<span></span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Patterns, books &amp; magazines<span></span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Beads, winders &amp; tools<span></span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Embroidery &amp; cross stitch<span></span><svg><use href="#arr"/></svg></a></li>
+      <li><a href="#top">Gift certificates<span></span><svg><use href="#arr"/></svg></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="s revs">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow">What our customers say</div>
+      <h2 class="rv-h">Knitters say it <em>best.</em></h2>
+    </div>
+    <div class="qrail">
+      <figure class="q"><div><span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“Gorgeous selection of yarn, luxury, hand-dyed, novelty, whatever you like! I can rely on the yarn descriptions to be informative and accurate… I'm a customer for life!”</blockquote></div><figcaption><b>M.E.</b></figcaption></figure>
+      <figure class="q"><div><span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“They will call/text you if your order has more than one dye lot. They have cheerful notes on their invoices.”</blockquote></div><figcaption><b>Anna Nedeau</b></figcaption></figure>
+      <figure class="q"><div><span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“Usually if I decide on a project I peruse what Little Knits has to offer and almost always find something that will work just great, and it's always at a better price than anywhere else.”</blockquote></div><figcaption><b>L.T.</b></figcaption></figure>
+      <figure class="q"><div><span class="stars" aria-label="5 stars"><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg><svg><use href="#star"/></svg></span><blockquote>“I enjoy the variety of yarns. Something new every week. Reliable colors and descriptions. If a skein doesn't match the others, it is listed separately.”</blockquote></div><figcaption><b>J.K.</b></figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section class="s story">
+  <div class="wrap">
+    <div class="photo"><img src="/p/little-knits-f33b/img/story.webp" alt="Hand-dyed Malabrigo Sock yarn in Sabiduria" loading="lazy" width="737" height="742"></div>
+    <div>
+      <div class="eyebrow" style="margin-top:22px">Our story</div>
+      <blockquote>“To share our passion for knitting by providing you with some of <em>the best yarn deals</em> on the web.”</blockquote>
+      <div class="sig"><img src="/p/little-knits-f33b/img/mono.png" alt=""><div><b>Fulay Little</b>Founder, owner and president</div></div>
+      <p>Little Knits is a small, family-owned shop in Seattle. Every order is packed by hand, with care.</p>
+    </div>
+  </div>
+</section>
+
+<section class="s help" style="padding-top:0">
+  <div class="wrap">
+    <div class="sh"><div><h2>No bots. Just real humans.</h2><p>Questions about a yarn, a dye lot or an order? Talk to the shop.</p></div></div>
+    <ul>
+      <li><b>Call us</b><span><a href="#top">1-800-877-5852</a> toll free · <a href="#top">206-535-7720</a> local<br>Monday to Friday, 9:30 AM–4:00 PM PT</span></li>
+      <li><b>Email us</b><span><a href="#top">customerservice@littleknits.com</a></span></li>
+      <li><b>Shipping</b><span>Orders ship within 2–3 business days. Orders of $100 or more ship free in the contiguous U.S.</span></li>
+    </ul>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div class="ftop">
+      <div><h2>Join our newsletter</h2><p>Sign up to get the best deals, new yarn updates and more!</p></div>
+      <form class="nl" onsubmit="return false"><input type="email" placeholder="Your email" aria-label="Email"><button class="btn">Sign up</button></form>
+    </div>
+    <div class="cols">
+      <div><h4>Shop</h4><a href="#top">New products</a><a href="#top">Yarn by weight</a><a href="#top">Yarn brands</a><a href="#top">Needles &amp; hooks</a><a href="#top">Patterns</a></div>
+      <div><h4>Sales</h4><a href="#top">Clear Me Away!</a><a href="#top">Mystery bags</a><a href="#top">60–75% off super sale</a><a href="#top">Gift certificates</a></div>
+      <div><h4>Help</h4><a href="#top">Contact us</a><a href="#top">Shipping &amp; returns</a><a href="#top">Gift card balance</a><a href="#top">Sign in / register</a></div>
+      <div><h4>Visit</h4><address>923 S Bayview St, <span style="white-space:nowrap">Ste 200</span><br>Seattle, WA</address><a href="#top">Our sister store: LiveStitch</a></div>
+    </div>
+    <div class="legal"><span>© 2026 Little Knits, Inc.</span><span>Homepage sketch by Toldo Studio</span></div>
+  </div>
+</footer>
+
+<div class="scrim" onclick="document.body.classList.remove('help-open')"></div>
+<button class="help-btn" aria-label="Talk to a real person" onclick="document.body.classList.toggle('help-open')"><svg class="i" viewBox="0 0 24 24"><path d="M4 5.5h16v10H9l-4 3.5v-3.5H4z"/></svg>Questions?</button>
+<div class="sheet" role="dialog" aria-label="Contact Little Knits">
+  <div class="top"><b>Talk to a real person</b><span>Calls and emails go to the shop team.</span><button class="close" aria-label="Close" onclick="document.body.classList.remove('help-open')"><svg class="i" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></svg></button></div>
+  <div class="opts">
+    <a href="#top"><i><svg class="i" viewBox="0 0 24 24"><path d="M6.5 3.5h3l1.5 4-2 1.2a11 11 0 0 0 6.3 6.3l1.2-2 4 1.5v3a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.5 5.7a2 2 0 0 1 2-2.2z"/></svg></i><div><b>Call 1-800-877-5852</b><span>Toll free · local 206-535-7720</span></div></a>
+    <a href="#top"><i><svg class="i" viewBox="0 0 24 24"><rect x="3.5" y="5.5" width="17" height="13" rx="2"/><path d="M4 7l8 6 8-6"/></svg></i><div><b>Email the shop</b><span>customerservice@littleknits.com</span></div></a>
+  </div>
+  <div class="hrs">Monday to Friday, 9:30 AM–4:00 PM PT</div>
+</div>
+<script>
+  if (new URLSearchParams(location.search).get('help') === '1') document.body.classList.add('help-open');
+  const onScroll = () => document.body.classList.toggle('scrolled', window.scrollY > 640);
+  addEventListener('scroll', onScroll, {passive: true}); onScroll();
+</script>
+</body>
+</html>
